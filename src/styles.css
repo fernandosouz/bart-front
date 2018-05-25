@@ -19,7 +19,7 @@ input[type=radio] {
     flex-wrap: wrap;
 }
 .checkbox-group .form-label {
-    width: 50%;
+    width: 100%;
 }
 input[type=submit],
 .btn-link {
