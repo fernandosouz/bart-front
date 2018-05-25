@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import ReactTestUtils from 'react-dom/test-utils';
+
 import Form from './Form'
 
 class FormContainer extends Component {
@@ -23,12 +25,14 @@ class FormContainer extends Component {
         this.setState({
             arrayObj: [{name: '' , date: new Date().toISOString().slice(0,10), index: 0}]
         });
-    }
+    };
 
 	handleFormSubmit(e) {
 		e.preventDefault();
 		console.log('Dados para envio do e-mail:', this.state);
 	};
+
+
 
     deleteIndex = (params) => {
         var count = 0;
