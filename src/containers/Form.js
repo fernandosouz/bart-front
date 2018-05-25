@@ -9,8 +9,6 @@ class Form extends Component {
             date: props.obj.date
         };
 
-        console.log(this.props.hideBtnDelete);
-
         this.handleFullNameChange = this.handleFullNameChange.bind(this);
         this.handleFullDateChange = this.handleFullDateChange.bind(this);
     }
@@ -21,7 +19,7 @@ class Form extends Component {
     }
 
     handleFullDateChange(e) {
-        this.setState({ date: e.target.value }, () => console.log('date:', this.state.date));
+        this.setState({ date: e.target.value });
         this.props.obj.date = e.target.value;
     }
 
